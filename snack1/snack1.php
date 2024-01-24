@@ -38,7 +38,9 @@
 <body>
     <ul>
         <?php foreach($partite as $punteggio) { ?>
-            
+            <li>
+                <?php echo $punteggio['Squadra di casa']; ?>
+            </li>
         <?php } ?>
     </ul>
 </body>
