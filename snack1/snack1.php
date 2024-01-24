@@ -39,7 +39,7 @@
     <ul>
         <?php foreach($partite as $punteggio) { ?>
             <li>
-                <?php echo $punteggio['Squadra di casa']; ?>
+                <?php echo $punteggio['Squadra di casa']. ' - ' .$punteggio['Squadra ospite'] ?>
             </li>
         <?php } ?>
     </ul>
