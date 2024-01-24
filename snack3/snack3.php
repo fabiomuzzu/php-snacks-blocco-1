@@ -4,48 +4,48 @@
             [
                 'title' => 'Post 1',
                 'author' => 'Michele Papagni',
-                'text' => 'Testo post 1'
+                'text' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis hic assumenda ea voluptas repellendus consequatur repellat, alias magni accusamus maxime aut illum tempore. Non odio rem quasi laboriosam beatae.'
             ],
             [
                 'title' => 'Post 2',
                 'author' => 'Agostino Pedilongu',
-                'text' => 'Testo post 2'
+                'text' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis hic assumenda ea voluptas repellendus consequatur repellat, alias magni accusamus maxime aut illum tempore. Non odio rem quasi laboriosam beatae.'
             ],
         ],
         '10/01/2020' => [
             [
                 'title' => 'Post 3',
                 'author' => 'Edoardo Panciadipecora',
-                'text' => 'Testo post 3'
+                'text' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis hic assumenda ea voluptas repellendus consequatur repellat, alias magni accusamus maxime aut illum tempore. Non odio rem quasi laboriosam beatae.'
             ],
             [
                 'title' => 'Post 4',
                 'author' => 'Guido Ronaldo',
-                'text' => 'Testo post 4'
+                'text' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis hic assumenda ea voluptas repellendus consequatur repellat, alias magni accusamus maxime aut illum tempore. Non odio rem quasi laboriosam beatae.'
             ],
         ],
         '10/01/2021' => [
             [
                 'title' => 'Post 5',
                 'author' => 'Mario Califfone',
-                'text' => 'Testo post 5'
+                'text' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis hic assumenda ea voluptas repellendus consequatur repellat, alias magni accusamus maxime aut illum tempore. Non odio rem quasi laboriosam beatae.'
             ],
             [
                 'title' => 'Post 6',
                 'author' => 'Vittorio Brumotti',
-                'text' => 'Testo post 6'
+                'text' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis hic assumenda ea voluptas repellendus consequatur repellat, alias magni accusamus maxime aut illum tempore. Non odio rem quasi laboriosam beatae.'
             ],
         ],
         '10/01/2022' => [
             [
                 'title' => 'Post 7',
                 'author' => 'Gerry Scotti',
-                'text' => 'Testo post 7'
+                'text' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis hic assumenda ea voluptas repellendus consequatur repellat, alias magni accusamus maxime aut illum tempore. Non odio rem quasi laboriosam beatae.'
             ],
             [
                 'title' => 'Post 8',
                 'author' => 'Pino Scotto',
-                'text' => 'Testo post 8'
+                'text' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis hic assumenda ea voluptas repellendus consequatur repellat, alias magni accusamus maxime aut illum tempore. Non odio rem quasi laboriosam beatae.'
             ],
         ],
     ]
@@ -63,14 +63,14 @@
     <div class="container">
         <?php foreach($articoli as $key => $elem) { ?>
             <div class="row">
-                <div class="col-12">
-                    <?php echo $key ?>
-                </div>
-                <?php foreach ($elem as $post) {
-                    echo $post['title'];
-                    echo $post['author'];
-                    echo $post['text'];
-                }?>
+                <?php foreach ($elem as $post) { ?>
+                    <div class="col">
+                        <?php echo $key ?>
+                        <h2><?php echo $post['title'] ?></h2>
+                        <p><?php echo $post['text'] ?></p>
+                        <div class="text-end"><?php echo $post['author'] ?></div>
+                    </div>
+                <?php } ?>
             </div>
         <?php } ?>
     </div>
