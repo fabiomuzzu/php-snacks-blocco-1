@@ -36,10 +36,11 @@
     <title>Basket Results</title>
 </head>
 <body>
+    <h1>Snack 1</h1>
     <ul>
         <?php foreach($partite as $punteggio) { ?>
             <li>
-                <?php echo $punteggio['Squadra di casa']. ' - ' .$punteggio['Squadra ospite'] ?>
+                <?php echo $punteggio['Squadra di casa']. ' - ' .$punteggio['Squadra ospite']. ' | ' .$punteggio['Punti squadra di casa']. ' - ' .$punteggio['Punti squadra ospite']?>
             </li>
         <?php } ?>
     </ul>
