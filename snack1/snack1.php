@@ -2,20 +2,28 @@
     $partite =
     [
         [
-            'Roma' => '90',
-            'Milano' => '80',
+            'Squadra di casa' => 'Roma',
+            'Squadra ospite' => 'Milano',
+            'Punti squadra di casa' => '90',
+            'Punti squadra ospite' => '80',
         ],
         [
-            'Bologna' => '70',
-            'Firenze' => '60',
+            'Squadra di casa' => 'Bologna',
+            'Squadra ospite' => 'Firenze',
+            'Punti squadra di casa' => '70',
+            'Punti squadra ospite' => '60',
         ],
         [
-            'Trieste' => '40',
-            'Salerno' => '20',
+            'Squadra di casa' => 'Trieste',
+            'Squadra ospite' => 'Salerno',
+            'Punti squadra di casa' => '40',
+            'Punti squadra ospite' => '20',
         ],
         [
-            'La Spezia' => '30',
-            'Genova' => '50',
+            'Squadra di casa' => 'La Spezia',
+            'Squadra ospite' => 'Genova',
+            'Punti squadra di casa' => '30',
+            'Punti squadra ospite' => '50',
         ]
     ]
 ?>
@@ -28,6 +36,8 @@
     <title>Basket Results</title>
 </head>
 <body>
-    
+    <ul>
+
+    </ul>
 </body>
 </html>

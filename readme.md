@@ -9,8 +9,8 @@ Creiamo un array contenente le partite di basket di un’ipotetica tappa del cal
 Olimpia Milano - Cantù | 55-60
 
 Svolgimento:
-- Creiamo un arrey ed inseriamo come chiave 2 voci: squadra di casa e squadra ospite; come valore i punti fatti
-- Stampiamo a schermo le partite utilizzando un ciclo for
+- Creiamo un arrey ed inseriamo come chiave 4 voci: squadra di casa, squadra ospite, punti fatti squadra di casa, punti fatti squadra ospite.
+- Stampiamo a schermo le partite utilizzando un ciclo foreach
 
 ## Snack 2
 Con un form passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
