@@ -1,18 +1,23 @@
 <?php 
+    $results = '';
     if (isset($_GET['name']) && (isset($_GET['email'])) && (isset($_GET['age']))) {
         $name = $_GET['name'];
         $email = $_GET['email'];
         $age = $_GET['age'];
 
-        if (strlen($name) < 3) {
-
+        if (strlen($name) < 3){
+            $results = 'Accesso negato!';
         }
-        elseif (!str_contains($email, '@') && !str_contains($email, '.')) {
-
+        elseif (!str_contains($email, '@') && !str_contains($email, '.')){
+            $results = 'Accesso negato!';
         }
-        elseif (is_numeric())
-    }
-    
+        elseif (!is_numeric($age)){
+            $results = 'Accesso negato!';
+        }
+        else{
+            $results = 'Accesso consentito!';
+        }
+    }  
 ?>
 
 <!DOCTYPE html>
@@ -33,5 +38,6 @@
         <input type="text" name="age">
         <button type="submit">Send</button>
     </form>
+    <h1><?php echo $results; ?></h1>
 </body>
 </html>
