@@ -37,7 +37,9 @@
 </head>
 <body>
     <ul>
-
+        <?php foreach($partite as $punteggio) { ?>
+            
+        <?php } ?>
     </ul>
 </body>
 </html>
