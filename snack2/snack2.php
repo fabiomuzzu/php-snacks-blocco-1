@@ -3,7 +3,16 @@
         $name = $_GET['name'];
         $email = $_GET['email'];
         $age = $_GET['age'];
+
+        if (strlen($name) < 3) {
+
+        }
+        elseif (!str_contains($email, '@') && !str_contains($email, '.')) {
+
+        }
+        elseif (is_numeric())
     }
+    
 ?>
 
 <!DOCTYPE html>
